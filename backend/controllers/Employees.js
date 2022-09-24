@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken";
 export const getEmployees = async(req, res) => {
     try {
         const employees = await Employees.findAll({
-            attributes:['id','empid','email']
+            attributes:['id','empid','email','Fname','Lname']
         });
         res.json(employees);
     } catch (error) {
@@ -14,14 +14,20 @@ export const getEmployees = async(req, res) => {
 }
  
 export const RegisterEmployee = async(req, res) => {
-    const { empid, email } = req.body;
+    const { empid, email,Fname,Lname,address,DOB,Mobile,City } = req.body;
     // if(password !== confPassword) return res.status(400).json({msg: "Password and Confirm Password do not match"});
     // const salt = await bcrypt.genSalt();
     // const hashPassword = await bcrypt.hash(password, salt);
     try {
-        await Users.create({
+        await Employees.create({
             empid: empid,
             email: email,
+            Fname:Fname,
+            Lname:Lname,
+            address:address,
+            DOB:DOB,
+            Mobile:Mobile,
+            City:City
             
         });
         res.json({msg: "Employee Added Successfully"});
