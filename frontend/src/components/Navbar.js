@@ -18,8 +18,8 @@ const Navbar = () => {
         <nav className="navbar is-light" role="navigation" aria-label="main navigation">
             <div className="container">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="logo" />
+                    <a className="navbar-item" href="https://nikhil9958.github.io/myWebsite/">
+                        <img src="https://img.freepik.com/free-vector/gradient-n-logo-template_23-2149372724.jpg?w=2000"  alt="logo" />
                     </a>
  
                     <a href="/" role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
