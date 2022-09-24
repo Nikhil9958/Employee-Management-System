@@ -3,3 +3,4 @@
 # dependencies
 /frontend/node_modules
 /jwt-auth/backend/node_modules
+/.gitignore
