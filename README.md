@@ -8,3 +8,6 @@ To run this,
 4)cd frontend and give npm i and then npm start in terminal
 
 The project will start running at "localhost:3000"
+
+
+Note - Except Update and delete functionality, everything is working fine.
