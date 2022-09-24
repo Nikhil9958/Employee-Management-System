@@ -26,6 +26,9 @@ const Register = () => {
             }
         }
     }
+    const naviagteLogin = () =>{
+        navigate('/');
+    }
  
     return (
         <section className="hero has-background-grey-light is-fullheight is-fullwidth">
@@ -34,6 +37,7 @@ const Register = () => {
                     <div className="columns is-centered">
                         <div className="column is-4-desktop">
                             <form onSubmit={Register} className="box">
+                            <h1 style={{textAlign: "center"}}>Sign Up Manager</h1>
                                 <p className="has-text-centered">{msg}</p>
                                 <div className="field mt-5">
                                     <label className="label">Name</label>
@@ -62,6 +66,9 @@ const Register = () => {
                                 </div>
                                 <div className="field mt-5">
                                     <button className="button is-success is-fullwidth">Register</button>
+                                </div>
+                                <div className="field mt-5">
+                                    <button className="button is-success is-fullwidth" onClick={naviagteLogin}>Login</button>
                                 </div>
                             </form>
                         </div>
